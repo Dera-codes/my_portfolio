@@ -10,21 +10,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: 200,
-          height: 200,
           padding: EdgeInsets.all(25.0),
-          alignment: Alignment.bottomCenter,
           decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.white,
               boxShadow: [
                 BoxShadow(
-                    color: Colors.black.withOpacity(.5),
-                    offset: Offset(0, 10),
-                    blurRadius: 15),
+                    color: Colors.black.withOpacity(.15),
+                    offset: Offset(0, 15),
+                    blurRadius: 25),
               ],
-              border: Border.all(color: Colors.green, width: 5),
+              border: Border.all(color: Colors.black, width: 2),
               borderRadius: BorderRadius.circular(25)),
-          child: Text('my text'),
+          child: Text('Welcome! My name is Chidera Nnamdi'),
         ),
       ),
     );

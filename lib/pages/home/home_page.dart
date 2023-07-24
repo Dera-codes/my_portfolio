@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Container(
           padding: EdgeInsets.all(25.0),
+          margin: EdgeInsets.all(25.0),
           decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
@@ -21,7 +22,14 @@ class HomePage extends StatelessWidget {
               ],
               border: Border.all(color: Colors.black, width: 2),
               borderRadius: BorderRadius.circular(25)),
-          child: Text('Welcome! My name is Chidera Nnamdi'),
+          child: Text(
+            'Welcome! My name is Chidera Nnamdi',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );

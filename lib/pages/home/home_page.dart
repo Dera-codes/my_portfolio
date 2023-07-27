@@ -31,7 +31,14 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                ProjectCard(),
+                ProjectCard(
+                  projectName: "My Project",
+                  projectYear: 2022,
+                  projectDescription:
+                      "Et laboris minim culpa commodo sit incididunt proident anim et. Ut esse ex duis consequat nostrud veniam sint ex culpa sunt ad irure amet quis. Aute cupidatat cillum aute magna nulla reprehenderit ad. Sit proident reprehenderit aute et mollit laborum esse incididunt et amet nulla.",
+                  projectImage:
+                      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+                ),
               ],
             ),
           ),

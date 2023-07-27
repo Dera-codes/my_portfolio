@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/widgets/Cards/header/headers.dart';
 import 'package:my_portfolio/widgets/Cards/intro_card.dart';
+import 'package:my_portfolio/widgets/Cards/project_cards.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,30 +17,21 @@ class HomePage extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Padding(
             padding: EdgeInsets.all(15.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Welcome back 👋",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                    Text(
-                      "Dera's Portfolio",
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
+                Header(),
+                SizedBox(
+                  height: 25,
                 ),
+                Text(
+                  "Projects",
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                ProjectCard(),
               ],
             ),
           ),

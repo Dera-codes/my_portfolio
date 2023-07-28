@@ -5,11 +5,11 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
@@ -30,11 +30,10 @@ class Header extends StatelessWidget {
             ),
           ],
         ),
-        Icon(
-          Icons.account_circle,
-          color: Colors.black,
-          size: 30,
-        ),
+        Image.asset(
+          "assets/img/avataaars.png",
+          height: 45,
+        )
       ],
     );
   }

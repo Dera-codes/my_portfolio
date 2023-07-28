@@ -17,29 +17,52 @@ class HomePage extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Padding(
             padding: EdgeInsets.all(15.0),
-            child: const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Header(),
-                SizedBox(
-                  height: 25,
-                ),
-                Text(
-                  "Projects",
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                ProjectCard(
-                  projectName: "My Project",
-                  projectYear: 2022,
-                  projectDescription:
-                      "Et laboris minim culpa commodo sit incididunt proident anim et. Ut esse ex duis consequat nostrud veniam sint ex culpa sunt ad irure amet quis. Aute cupidatat cillum aute magna nulla reprehenderit ad. Sit proident reprehenderit aute et mollit laborum esse incididunt et amet nulla.",
-                  projectImage:
-                      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-                ),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Header(),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Text(
+                    "Projects",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    height: 350,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: const [
+                        ProjectCard(
+                          projectName: "My Project",
+                          projectYear: 2022,
+                          projectDescription: "This a portfolio app for dera",
+                          projectImage:
+                              "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+                        ),
+                        ProjectCard(
+                          projectName: "My Project",
+                          projectYear: 2022,
+                          projectDescription: "This a portfolio app for dera",
+                          projectImage:
+                              "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+                        ),
+                        ProjectCard(
+                          projectName: "My Project",
+                          projectYear: 2022,
+                          projectDescription: "This a portfolio app for dera",
+                          projectImage:
+                              "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

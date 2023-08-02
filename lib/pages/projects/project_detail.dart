@@ -72,6 +72,25 @@ class HorizontalTechView extends StatelessWidget {
     return SizedBox(
       height: 45,
       width: MediaQuery.of(context).size.width,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: techList.length,
+        itemBuilder: (context, index) {
+          return Container(
+            alignment: Alignment.center,
+            padding: const EdgeInsets.only(right: 15, left: 15),
+            margin: const EdgeInsets.only(right: 15),
+            decoration: BoxDecoration(
+                border: Border.all(color: Colors.black),
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.white),
+            child: Text(
+              techList[index],
+              style: const TextStyle(color: Colors.black),
+            ),
+          );
+        },
+      ),
     );
   }
 }

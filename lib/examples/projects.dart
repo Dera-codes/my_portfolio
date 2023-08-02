@@ -2,7 +2,8 @@ import 'package:my_portfolio/models/project.dart';
 
 List<Project> projects = [
   Project(
-    name: "Project 1",
+    name: "Flutter Finance",
+    technologiesUsed: ["Flutter", "Aws", "Git"],
     year: 2018,
     description: "This is my description 1",
     imageUrl:
@@ -10,6 +11,7 @@ List<Project> projects = [
   ),
   Project(
     name: "Project 2",
+    technologiesUsed: ["Flutter", "Firebase", "Git"],
     year: 2019,
     description: "This is my description 1",
     imageUrl:
@@ -17,6 +19,7 @@ List<Project> projects = [
   ),
   Project(
     name: "Project ",
+    technologiesUsed: ["Flutter", "NodeJs", "Git"],
     year: 2020,
     description: "This is my description 1",
     imageUrl:
@@ -24,6 +27,7 @@ List<Project> projects = [
   ),
   Project(
     name: "Project 4",
+    technologiesUsed: ["Flutter", "MongoDb", "Git"],
     year: 2021,
     description: "This is my description 1",
     imageUrl:
